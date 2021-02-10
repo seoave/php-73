@@ -18,8 +18,10 @@ class StringsTest extends TestCase
         $this->assertEquals('Hello $foo', 'Hello $foo');
 
         // TODO "Hello ${foo}"
+        $this->assertEquals('Hello world', "Hello ${foo}");
 
         // TODO "Hello " . $foo
+        $this->assertEquals('Hello world',"Hello " . $foo);
 
         // TODO Heredoc
 
